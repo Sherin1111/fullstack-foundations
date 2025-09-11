@@ -29,4 +29,4 @@ CFGDegree Foundation Module Assignments
 
 ## .gitignore is used for when you do not want certain files and folders tracked.
 
-## requirements.txt is used to to list all the external packages and which verions you need to run the project.
+## requirements.txt is used to list all the external packages and the versions you need to run the project.
