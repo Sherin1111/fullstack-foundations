@@ -12,4 +12,10 @@ CFGDegree Foundation Module Assignments
 - Interactive Landing Pages
 - World Clock
 - Weather App
+<<<<<<< HEAD
+- Peom Generator
+
+![alt text](image.png)
+=======
 - Poem Generator
+>>>>>>> main
