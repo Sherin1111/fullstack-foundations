@@ -12,10 +12,17 @@ CFGDegree Foundation Module Assignments
 - Interactive Landing Pages
 - World Clock
 - Weather App
-<<<<<<< HEAD
 - Peom Generator
 
-![alt text](image.png)
-=======
-- Poem Generator
->>>>>>> main
+### I created a new branch called new_file
+
+![alt text](image-1.png)
+
+## I opened a pull request
+
+![alt text](image-2.png)
+
+## I merged and deployed to main branch
+
+![alt text](image-3.png)
+![alt text](image-4.png)
