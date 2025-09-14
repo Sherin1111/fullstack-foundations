@@ -1,0 +1,29 @@
+body {
+  background: #edf5fc;
+}
+
+h1 {
+  text-align: center;
+  font-size: 70px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #131200;
+}
+
+span {
+  display: block;
+}
+
+.container {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+  text-align: center;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #131200;
+}
