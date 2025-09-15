@@ -8,43 +8,45 @@
   </head>
   <body>
     <h1>Fragrance Selector</h1>
-
-    <div class="container">
-      <p>
+    
+    <h2>
         Discover your perfect fragrance by choosing three of your favourite
         notes.
-      </p>
+      </h2>
 
-      <form>
+    <div class="container">
+     
+      <form class="noteForm" id="noteForm">
         <span> 
-        <label for="topnote">Choose a top note:</label>
-        <select name="topnote" id="topnote">
+        <label for="topNote">Choose a top note:</label>
+        <select name="topNote" id="topNote">
           <option value="citrus">Citrus</option>
-          <option value="herbal">Herbal</option>
           <option value="fruity">Fruity</option>
         </select>
         </span>
         <span> 
-         <label for="middlenote">Choose a middle note:</label>
-        <select name="middlenote" id="middlenote">
+         <label for="middleNote">Choose a middle note:</label>
+        <select name="middleNote" id="middleNote">
           <option value="floral">Floral</option>
           <option value="spicy">Spicy</option>
-          <option value="aquatic">Aquatic</option> 
         </select>
         </span>
          <span> 
-          <label for="basenote">Choose a base note:</label>
-        <select name="basenote" id="basenote">
+          <label for="baseNote">Choose a base note:</label>
+        <select name="baseNote" id="baseNote">
           <option value="woody">Woody</option>
-          <option value="amber_vanilla">Amber/Vanilla</option>
-          <option value="musk">Musk</option>  
+          <option value="vanilla">Vanilla</option>
         </span>
         </select>
         <br /><br />
-        <input type="submit" value="Submit" />
+        <input type="button" onclick="receiveNoteForm()" value="Submit">
       </form>
+      <p> Perfume recommendation: <strong id="perfumeRec"> </strong></p> 
     </div>
-   
+
+   <p> Perfume recommendation: </p> 
+
+
     <footer>This project was coded by Sherin Adam</footer>
 
     <script src="src/index.js"></script>
