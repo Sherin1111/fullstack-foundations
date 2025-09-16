@@ -1,37 +1,93 @@
-//receive input from user
-function receiveNoteForm() {
+// Receive input from user and output the recommendation
+function getNoteForm() {
   // To get the users value from each option
   let topNote = document.getElementById("topNote").value;
   let middleNote = document.getElementById("middleNote").value;
   let baseNote = document.getElementById("baseNote").value;
 
-  let result;
-  //if response is citus, spicy, and woody recommend "Creed Aventus"
+  // An array of perfume recommendations
+  let perfumes = [
+    "Creed Aventus", // [0]
+    "Viktor & Rolf Flowerbomb", // [1]
+    "Chanel Chance Eau Fraîche", // [2]
+    "Dolce & Gabbana Light Blue Intense", // [3]
+    "Mugler Angel Muse", // [4]
+    "YSL Black Opium", // [5]
+    "Marc Jacobs Daisy", // [6]
+    "Lancôme La Vie Est Belle", // [7]
+  ];
+
+  // The result of the recommendation
+  let result = " ";
+
+  // If response is citus, spicy, and woody recommend Creed Aventus
   if (topNote === "citrus" && middleNote === "spicy" && baseNote === "woody") {
-    result = "Creed Aventus";
+    result = perfumes[0];
   }
 
-  // else is respons is citrus, spicy, and vanilla recommend Viktor & Rolf Flowerbomb
+  // Else if response is citrus, spicy, and vanilla recommend Viktor & Rolf Flowerbomb
   else if (
     topNote === "citrus" &&
     middleNote === "spicy" &&
     baseNote === "vanilla"
   ) {
-    result = "Viktor & Rolf Flowerbomb";
+    result = perfumes[1];
   }
 
-  // else if respons is citrus, floral, and woody recommend Chanel Chance Eau Fraiche
+  // Else if response is citrus, floral, and woody recommend Chanel Chance Eau Fraîche
+  else if (
+    topNote === "citrus" &&
+    middleNote === "floral" &&
+    baseNote === "woody"
+  ) {
+    result = perfumes[2];
+  }
 
-  // else if respons is citrus, floral, and vanilla recommend Chanel Dolce & Gabbana Light Blue Intense
+  // Else if response is citrus, floral, and vanilla recommend Dolce & Gabbana Light Blue Intense
+  else if (
+    topNote === "citrus" &&
+    middleNote === "floral" &&
+    baseNote === "vanilla"
+  ) {
+    result = perfumes[3];
+  }
 
-  // else if respons is Fruity, spicy, and woody recommend Mugler Angle Muse
+  // Else if response is fruity, spicy, and woody recommend Mugler Angel Muse
+  else if (
+    topNote === "fruity" &&
+    middleNote === "spicy" &&
+    baseNote === "woody"
+  ) {
+    result = perfumes[4];
+  }
 
-  // else if respons is Fruity, spicy, and vanilla recommend Mugler YSL Black Opium
+  // Else if response is Fruity, spicy, and vanilla recommend YSL Black Opium
+  else if (
+    topNote === "fruity" &&
+    middleNote === "spicy" &&
+    baseNote === "vanilla"
+  ) {
+    result = perfumes[5];
+  }
 
-  // else if respons is Fruity, floral, and woody recommend Marc Jacobs Daisy
+  // Else if response is Fruity, floral, and woody recommend Marc Jacobs Daisy
+  else if (
+    topNote === "fruity" &&
+    middleNote === "floral" &&
+    baseNote === "woody"
+  ) {
+    result = perfumes[6];
+  }
 
-  // else if respons is Fruity, floral, and vanilla recommend Lancome La Vie Est Belle
+  // Else if response is Fruity, floral, and vanilla recommend Lancôme La Vie Est Belle
+  else if (
+    topNote === "fruity" &&
+    middleNote === "floral" &&
+    baseNote === "vanilla"
+  ) {
+    result = perfumes[7];
+  }
 
-  // Update result to paragraph
+  // Updates the result to paragraph element
   document.getElementById("perfumeRec").innerHTML = result;
 }
