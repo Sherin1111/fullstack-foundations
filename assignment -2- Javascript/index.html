@@ -18,31 +18,37 @@
      
       <form class="noteForm" id="noteForm">
         <span> 
-        <label for="topNote">Choose a top note:</label>
+        <label for="topNote">Top Note:</label>
         <select name="topNote" id="topNote">
           <option value="citrus">Citrus</option>
           <option value="fruity">Fruity</option>
         </select>
         </span>
         <span> 
-         <label for="middleNote">Choose a middle note:</label>
+         <label for="middleNote">Middle Note:</label>
         <select name="middleNote" id="middleNote">
           <option value="floral">Floral</option>
           <option value="spicy">Spicy</option>
         </select>
         </span>
          <span> 
-          <label for="baseNote">Choose a base note:</label>
+          <label for="baseNote">Base Note:</label>
         <select name="baseNote" id="baseNote">
           <option value="woody">Woody</option>
           <option value="vanilla">Vanilla</option>
         </span>
         </select>
         <br /><br />
-        <input type="button" onclick="getNoteForm()" value="Submit">
+        <input class="submitButton" type="button" onclick="getNoteForm()" value="Submit">
       </form>
-      <p> Perfume recommendation: <strong id="perfumeRec"> </strong></p> 
+
+      <p> Perfume recommendation: <strong class="selectStrong" id="perfumeRec"> </strong></p> 
+      <br>
+      <button class="addButton" onclick="myFunction()">  Add to basket </button>
     </div>
+
+    
+  
 
     <footer>This project was coded by Sherin Adam</footer>
 
