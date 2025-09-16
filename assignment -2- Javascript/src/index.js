@@ -90,4 +90,18 @@ function getNoteForm() {
 
   // Updates the result to paragraph element
   document.getElementById("perfumeRec").innerHTML = result;
+  document.body.style.backgroundColor = "#FFC8DD";
+}
+
+//Add to basket alert
+function myFunction() {
+  let add = prompt("Confirm add to basket");
+
+  add = add.toLowerCase().trim();
+
+  if (add === "yes") {
+    alert("GREAT! Your perfume has been added to the basket! 🎉");
+  } else {
+    alert("The perfume has not been added to the basket 🥀");
+  }
 }
