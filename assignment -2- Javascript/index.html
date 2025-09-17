@@ -20,6 +20,7 @@
         <span> 
         <label for="topNote">Top Note:</label>
         <select name="topNote" id="topNote">
+          <option value>Choose a Note</option>
           <option value="citrus">Citrus</option>
           <option value="fruity">Fruity</option>
         </select>
@@ -27,6 +28,7 @@
         <span> 
          <label for="middleNote">Middle Note:</label>
         <select name="middleNote" id="middleNote">
+          <option value>Choose a Note</option>
           <option value="floral">Floral</option>
           <option value="spicy">Spicy</option>
         </select>
@@ -34,6 +36,7 @@
          <span> 
           <label for="baseNote">Base Note:</label>
         <select name="baseNote" id="baseNote">
+          <option value>Choose a Note</option>
           <option value="woody">Woody</option>
           <option value="vanilla">Vanilla</option>
         </span>
@@ -44,14 +47,17 @@
 
       <p> Perfume recommendation: <strong class="selectStrong" id="perfumeRec"> </strong></p> 
       <br>
-      <button class="addButton" onclick="myFunction()">  Add to basket </button>
+     <p id="addBasket"> </p>
+      <br>
+      <button id="addButton" class="addButton" type="button" onclick="myFunction()">  Add to basket </button>
     </div>
 
-    
-  
-
+   
     <footer>This project was coded by Sherin Adam</footer>
 
     <script src="src/index.js"></script>
   </body>
 </html>
+
+
+
