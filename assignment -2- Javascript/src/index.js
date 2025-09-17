@@ -94,14 +94,20 @@ function getNoteForm() {
 }
 
 //Add to basket alert
+
 function myFunction() {
-  let add = prompt("Confirm add to basket");
+  const addButtonElement = document.querySelector("#addButton");
+  const addBasketElement = document.querySelector("#addBasket");
 
-  add = add.toLowerCase().trim();
+  let addElement = prompt("Confirm 'Yes' to add the perfume to the basket");
 
-  if (add === "yes") {
-    alert("GREAT! Your perfume has been added to the basket! 🎉");
+  if (addElement === "Yes" || addElement === "yes" || addElement === "YES") {
+    addBasketElement.innerText =
+      "GREAT! Your perfume has been added to the basket! 🎉";
   } else {
-    alert("The perfume has not been added to the basket 🥀");
+    addBasketElement.innerText =
+      "The perfume has not been added to the basket 🥀";
+
+    document.getElementById("addBasket").appendChild(p);
   }
 }
