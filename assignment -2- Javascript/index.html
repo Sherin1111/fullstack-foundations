@@ -14,8 +14,10 @@
         notes.
       </h2>
 
+      
+
     <div class="container">
-     
+     <p id="addEmojis"> </p>
       <form class="noteForm" id="noteForm">
         <span> 
         <label for="topNote">Top Note:</label>
@@ -42,17 +44,17 @@
         </span>
         </select>
         <br /><br />
-        <input class="submitButton" type="button" onclick="getNoteForm()" value="Submit">
+        <input id="submitButton" class="submitButton" type="button" onclick="getNoteForm()" value="Submit">
       </form>
 
-      <p> Perfume recommendation: <strong class="selectStrong" id="perfumeRec"> </strong></p> 
+      <p> Perfume recommendation: <br> <strong class="selectStrong" id="perfumeRec"> </strong></p> 
       <br>
-     <p id="addBasket"> </p>
+    </div>
+ <p id="addBasket"> </p>
       <br>
       <button id="addButton" class="addButton" type="button" onclick="myFunction()">  Add to basket </button>
-    </div>
-
-   
+    <br>
+     <br>
     <footer>This project was coded by Sherin Adam</footer>
 
     <script src="src/index.js"></script>

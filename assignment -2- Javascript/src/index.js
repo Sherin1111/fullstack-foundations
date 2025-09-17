@@ -88,17 +88,22 @@ function getNoteForm() {
     result = perfumes[7];
   }
 
-  // Updates the result to paragraph element
+  // Outputs the result to paragraph element
   document.getElementById("perfumeRec").innerHTML = result;
+
+  // Changes the background from blue to pink
   document.body.style.backgroundColor = "#FFC8DD";
 }
 
-//Add to basket alert
+// Updates the result to paragraph element
+const submitButton = document.getElementById("submitButton");
+submitButton.addEventListener("click", getNoteForm);
 
+//Add to basket alert
 function myFunction() {
-  const addButtonElement = document.querySelector("#addButton");
   const addBasketElement = document.querySelector("#addBasket");
 
+  // A popup for the user to confirm they want the perfume in their basket
   let addElement = prompt("Confirm 'Yes' to add the perfume to the basket");
 
   if (addElement === "Yes" || addElement === "yes" || addElement === "YES") {
@@ -111,3 +116,12 @@ function myFunction() {
     document.getElementById("addBasket").appendChild(p);
   }
 }
+
+// An array of emoji's to represent the notes
+const isEmoji = ["🍋", "🫐", "🌶️", "🪵", "🌸", "🍦"];
+let emojiOutput = "";
+// Use a loop to iterate through the values in the array
+for (let i = 0; i < isEmoji.length; i++) {
+  emojiOutput += isEmoji[i] + " ";
+}
+document.getElementById("addEmojis").innerHTML = emojiOutput;

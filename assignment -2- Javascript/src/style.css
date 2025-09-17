@@ -1,23 +1,18 @@
 body {
   background: #edf5fc;
   font-family: Helvetica, sans-serif;
+  text-align: center;
 }
 
 h1 {
-  text-align: center;
   font-size: 60px;
   color: #131200;
 }
 
 h2 {
-  text-align: center;
   font-size: 15px;
   font-weight: normal;
   color: #131200;
-}
-
-.selectStrong {
-  font-weight: bolder;
 }
 
 span {
@@ -28,38 +23,39 @@ select {
   display: flexbox;
   margin: 10px 0;
   width: auto;
-  justify-content: space-between;
+  justify-content: left;
   padding: 5px 0;
-}
-
-.container {
-  background-color: #a2d2ff;
-  max-width: 400px;
-  margin: 60px auto;
-  padding: 15px;
-  border-radius: 10px;
-  display: grid;
-  place-items: left;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-select {
-  border-radius: 10px;
+  border-radius: 6px;
   padding: 5px;
-}
-
-.submitButton {
-  padding: 5px;
-  border-radius: 10px;
-}
-
-.addButton {
-  padding: 5px;
-  border-radius: 10px;
 }
 
 footer {
-  text-align: center;
+  margin: 30px;
   font-size: 15px;
   color: #131200;
+}
+
+.container {
+  background-color: #abd6ff;
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.submitButton {
+  background-color: #cea6e5;
+  padding: 5px;
+  border: 1px;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.addButton {
+  background-color: #cea6e5;
+  padding: 5px;
+  border: 1px;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
