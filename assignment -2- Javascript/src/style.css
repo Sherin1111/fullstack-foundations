@@ -1,11 +1,11 @@
 body {
   background: #edf5fc;
+  font-family: Helvetica, sans-serif;
 }
 
 h1 {
   text-align: center;
   font-size: 60px;
-  font-family: Arial, Helvetica, sans-serif;
   color: #131200;
 }
 
@@ -13,7 +13,6 @@ h2 {
   text-align: center;
   font-size: 15px;
   font-weight: normal;
-  font-family: Arial, Helvetica, sans-serif;
   color: #131200;
 }
 
@@ -26,21 +25,22 @@ span {
 }
 
 select {
-  display: left;
-  font-family: Arial, Helvetica, sans-serif;
+  display: flexbox;
   margin: 10px 0;
-  width: 80px;
+  width: auto;
   justify-content: space-between;
   padding: 5px 0;
 }
 
 .container {
-  max-width: 600px;
+  background-color: #a2d2ff;
+  max-width: 400px;
   margin: 60px auto;
-  padding: 10px;
+  padding: 15px;
   border-radius: 10px;
   display: grid;
-  place-items: center;
+  place-items: left;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 select {
@@ -49,16 +49,17 @@ select {
 }
 
 .submitButton {
+  padding: 5px;
   border-radius: 10px;
 }
 
 .addButton {
+  padding: 5px;
   border-radius: 10px;
 }
 
 footer {
   text-align: center;
   font-size: 15px;
-  font-family: Arial, Helvetica, sans-serif;
   color: #131200;
 }
