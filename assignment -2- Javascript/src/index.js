@@ -95,8 +95,8 @@ function getNoteForm() {
   document.body.style.backgroundColor = "#FFC8DD";
 }
 
-// Updates the result to paragraph element
-const submitButton = document.getElementById("submitButton");
+// Submit button to change background and output the perfume recommendation
+let submitButton = document.querySelector("#submitButton");
 submitButton.addEventListener("click", getNoteForm);
 
 //Add to basket alert
@@ -119,7 +119,8 @@ function myFunction() {
 
 // An array of emoji's to represent the notes
 const isEmoji = ["🍋", "🫐", "🌶️", "🪵", "🌸", "🍦"];
-let emojiOutput = "";
+let emojiOutput = " ";
+
 // Use a loop to iterate through the values in the array
 for (let i = 0; i < isEmoji.length; i++) {
   emojiOutput += isEmoji[i] + " ";
