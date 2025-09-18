@@ -21,16 +21,21 @@ Output: // [object Array] (4)
 `const cfgdegreeStream = [“Product Management”, "Software or Data", "Data Science",` `"Full-Stacks"];`
 
 `const removeCfgdegreeStream = cfgdegreeStream.shift();`
+
 `console.log(removeCfgdegreeStream);`
+
 `console.log(cfgdegreeStream);`
 
 Output: `"Product Management"`
+
 Output: // [object Array] (3)
+
 `["Software or Data","Data Science","Full-Stacks"]`
 
 The **split()** is used to split a string into an array of substrings. It returns the substrings as an array, using " " (a space) as a separator, splits each word, while "" (empty string) splits every character, including spaces.
 
 `const text = "Start your career in tech with the CFGDEGREE";`
+
 `const myArray = text.split(" ");`
 
 `console.log(myArray)`
@@ -41,9 +46,11 @@ Output: // [object Array] (8)
 `const text = "CFGDEGREE";`
 
 `const myArray = text.split("");`
+
 `console.log(myArray);`
 
 Output: // [object Array] (9)
+
 `["C","F","G","D","E","G","R","E","E"]`
 
 ### 2.2.
@@ -51,16 +58,27 @@ Output: // [object Array] (9)
 An object is a collection of related data and properties, and an **object method** is a function stored as one of those properties. A property’s value can be a function, which is then referred to as a method.
 
 `const progLang = {`
-`name: "JavaScript", // String`
-`year: 1995, // Number`
+
+`name: "JavaScript",` // String
+
+`year: 1995,` // Number
+
 `inventor: {`
-`fullName: "Brendan Eich", // String`
-`age: 64, // Number`
-`country: "America" // String`
+
+`fullName: "Brendan Eich",` // String
+
+`age: 64,` // Number
+
+`country: "America"` // String
+
 `},`
+
 `langInfo: function () {`
+
 `console.log("This is " + this.name);`
+
 ` }`
+
 `};`
 
 `progLang.langInfo();`
