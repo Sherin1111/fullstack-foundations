@@ -6,10 +6,14 @@
 
 **unshift()** adds a specified element to the beginning of an array and returns the new length of that array.
 
-`const cfgdegreeStream = ["software or Data", "Data Science", "Full-Stacks"]:` `cfgdegreeStream.unshift("Product Management");`
+`const cfgdegreeStream = ["software or Data", "Data Science", "Full-Stacks"]:`
+
+`cfgdegreeStream.unshift("Product Management");`
+
 `console.log(cfgdegreeStream);`
 
 Output: // [object Array] (4)
+
 `["Product Management","software or Data","Data Science","Full-Stacks"]`
 
 **shift()** removes the first element of an array and returns that removed element. It shifts all values to the left by 1 and reduces the array’s length by 1, resulting in the first element being removed.
