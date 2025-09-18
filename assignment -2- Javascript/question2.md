@@ -59,17 +59,17 @@ An object is a collection of related data and properties, and an **object method
 
 `const progLang = {`
 
-`name: "JavaScript",` // String
+`name: "JavaScript",` _// String_
 
-`year: 1995,` // Number
+`year: 1995,` _// Number_
 
 `inventor: {`
 
-`fullName: "Brendan Eich",` // String
+`fullName: "Brendan Eich",` _// String_
 
-`age: 64,` // Number
+`age: 64,` _// Number_
 
-`country: "America"` // String
+`country: "America"` _// String_
 
 `},`
 
