@@ -22,15 +22,14 @@ In your **package.json** file, replace <br />
 `"scripts": {"test": "echo \"Error: no test specified\" && exit 1"` <br />
 with <br />
 `"scripts": {"start": "node index.js"` <br />
-then run <br />
-`npm start`
+then run `npm start`
 
 Your server will be live at `http://localhost:3000`
 
 ## Connecting to The Database
 
 Create a **.env** file and add your **MySQL** password <br />
-**`password: "Your mySQL password`** <br />
+`password: "Your mySQL password` <br />
 Make sure **.env** is listed in your **.gitignore** file to protect your password. <br />
 In your **index.js**, include `const dotenv = require('dotenv')`
 
@@ -38,7 +37,8 @@ In your **index.js**, include `const dotenv = require('dotenv')`
 
 Create your Database and table in **MySQL**
 
-```CREATE DATABASE blindBoxWeb;
+```
+   CREATE DATABASE blindBoxWeb;
    USE blindBoxWeb;
 
    CREATE TABLE customer_order (
