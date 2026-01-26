@@ -1,4 +1,4 @@
-# ASSIGNMENT 2: JavaScript
+# JavaScript
 
 ## Question 2
 
@@ -6,84 +6,74 @@
 
 **unshift()** adds a specified element to the beginning of an array and returns the new length of that array.
 
-`const cfgdegreeStream = ["software or Data", "Data Science", "Full-Stacks"]:`
-
-`cfgdegreeStream.unshift("Product Management");`
-
-`console.log(cfgdegreeStream);`
+``` 
+const cfgdegreeStream = ["software or Data", "Data Science", "Full-Stacks"]:
+cfgdegreeStream.unshift("Product Management");
+console.log(cfgdegreeStream);
 
 Output: // [object Array] (4)
-
-`["Product Management","software or Data","Data Science","Full-Stacks"]`
+["Product Management","software or Data","Data Science","Full-Stacks"]
+```
 
 **shift()** removes the first element of an array and returns that removed element. It shifts all values to the left by 1 and reduces the array’s length by 1, resulting in the first element being removed.
 
-`const cfgdegreeStream = [“Product Management”, "Software or Data", "Data Science",` `"Full-Stacks"];`
+```
+const cfgdegreeStream = [“Product Management”, "Software or Data", "Data Science", "Full-Stacks"];
+const removeCfgdegreeStream = cfgdegreeStream.shift();
+console.log(removeCfgdegreeStream);
+console.log(cfgdegreeStream);
 
-`const removeCfgdegreeStream = cfgdegreeStream.shift();`
-
-`console.log(removeCfgdegreeStream);`
-
-`console.log(cfgdegreeStream);`
-
-Output: `"Product Management"`
+Output: "Product Management"
 
 Output: // [object Array] (3)
-
-`["Software or Data","Data Science","Full-Stacks"]`
+["Software or Data","Data Science","Full-Stacks"]
+```
 
 The **split()** is used to split a string into an array of substrings. It returns the substrings as an array, using " " (a space) as a separator, splits each word, while "" (empty string) splits every character, including spaces.
 
-`const text = "Start your career in tech with the CFGDEGREE";`
+```
+const text = "Start your career in tech with the CFGDEGREE";
+const myArray = text.split(" ");
 
-`const myArray = text.split(" ");`
-
-`console.log(myArray)`
+console.log(myArray)
 
 Output: // [object Array] (8)
-`["Start","your","career","in","tech","with","the","CFGDEGREE"]`
+["Start","your","career","in","tech","with","the","CFGDEGREE"]
 
-`const text = "CFGDEGREE";`
+const text = "CFGDEGREE";
+const myArray = text.split("");
 
-`const myArray = text.split("");`
-
-`console.log(myArray);`
+console.log(myArray);
 
 Output: // [object Array] (9)
 
-`["C","F","G","D","E","G","R","E","E"]`
+["C","F","G","D","E","G","R","E","E"]
+```
 
 ### 2.2.
 
 An object is a collection of related data and properties, and an **object method** is a function stored as one of those properties. A property’s value can be a function, which is then referred to as a method.
 
-`const progLang = {`
+```
+const progLang = {
+name: "JavaScript", // String
+year: 1995, // Number
+inventor: {
+fullName: "Brendan Eich", // String
+age: 64, // Number
+country: "America" // String
+},
 
-`name: "JavaScript",` _// String_
+langInfo: function () {
+console.log("This is " + this.name);
+}
 
-`year: 1995,` _// Number_
+};
 
-`inventor: {`
+progLang.langInfo();
 
-`fullName: "Brendan Eich",` _// String_
-
-`age: 64,` _// Number_
-
-`country: "America"` _// String_
-
-`},`
-
-`langInfo: function () {`
-
-`console.log("This is " + this.name);`
-
-` }`
-
-`};`
-
-`progLang.langInfo();`
-
-Output: `"This is JavaScript"`
+Output: "This is JavaScript"
+```
 
 ### 2.3.
 

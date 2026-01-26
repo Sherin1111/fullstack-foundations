@@ -1,11 +1,4 @@
-// Receive input from user and output the recommendation
-function getNoteForm() {
-  // To get the users value from each option
-  let topNote = document.getElementById("topNote").value;
-  let middleNote = document.getElementById("middleNote").value;
-  let baseNote = document.getElementById("baseNote").value;
-
-  // An array of perfume recommendations
+// An array of perfume recommendations
   let perfumes = [
     "Creed Aventus", // [0]
     "Viktor & Rolf Flowerbomb", // [1]
@@ -16,6 +9,15 @@ function getNoteForm() {
     "Marc Jacobs Daisy", // [6]
     "Lancôme La Vie Est Belle", // [7]
   ];
+
+
+// Receive input from user and output the recommendation
+function getNoteForm() {
+  // To get the users value from each option
+  let topNote = document.getElementById("topNote").value;
+  let middleNote = document.getElementById("middleNote").value;
+  let baseNote = document.getElementById("baseNote").value;
+
 
   // The result of the recommendation
   let result = " ";
@@ -88,6 +90,8 @@ function getNoteForm() {
     result = perfumes[7];
   }
 
+  console.log("Top Note:", topNote, "Middle Note:", middleNote, "Base Note:", baseNote);
+  console.log("Recommended Perfume:", result);
   // Outputs the result to paragraph element
   document.getElementById("perfumeRec").innerHTML = result;
 
