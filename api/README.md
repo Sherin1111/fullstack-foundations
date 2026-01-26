@@ -9,33 +9,27 @@ With more time, I would have added an additional table to manage stock levels an
 
 ## Installation
 
-1. Initialise a new **Node.js** project `npm init -y`
-2. Install the framework **Express.js** `npm install express`
-3. Install dependencies `npm install cors body-parser`
-4. Install **MySQL2** `npm install mysql2`
-5. install **dotenv** `npm install dotenv`
-6. Start your server `npm start`
+1. Clone the repository: 
+```
+git clone <your-repo-url>
+cd <repo-folder>
+```
+2. Install dependencies from package.json `npm install`
+3.  Start your server `npm start`
 
-### Setup
-
-In your **package.json** file, replace <br />
-`"scripts": {"test": "echo \"Error: no test specified\" && exit 1"` <br />
-with <br />
-`"scripts": {"start": "node index.js"` <br />
-then run `npm start`
 
 Your server will be live at `http://localhost:3000`
 
-## Connecting to The Database
+## Configuration
 
-Create a **.env** file and add your **MySQL** password <br />
+Create a **.env** file in the root folder: <br />
 `password: "Your mySQL password` <br />
-Make sure **.env** is listed in your **.gitignore** file to protect your password. <br />
-In your **index.js**, include `const dotenv = require('dotenv')`
+Make sure **.env** is listed in your **.gitignore** to protect your credentials. <br />
+In your **index.js**: `const dotenv = require('dotenv')`
 
 ## MySQL - Database and Table
 
-Create your Database and table in **MySQL**
+Create the database and table in **MySQL**
 
 ```
    CREATE DATABASE blindBoxWeb;
@@ -53,16 +47,16 @@ Create your Database and table in **MySQL**
  );
 ```
 
-## API Endpoint
+## API Endpoints
 
-You can test the endpoints using **Postman**:
+You can test the API using **Postman** or similar tools:
 
 | Method | Endpoint                | Description              |
 | ------ | ----------------------- | ------------------------ |
-| POST   | /create-order           | Submit a new order       |
+| POST   | /order           | Submit a new order       |
 | GET    | /order                  | Retrieve all orders      |
-| PUT    | /update-order/:order_id | Update an existing order |
-| DELETE | /delete-order/:order_id | Delete an order          |
+| PUT    | /order/:order_id | Update an existing order |
+| DELETE | /order/:order_id | Delete an order          |
 
 ### Testing POST
 

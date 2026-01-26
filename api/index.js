@@ -22,7 +22,7 @@ app.get("/", (req, res) => {
 });
 
 // First endpoiont, submitting new orders
-app.post("/create-order", (req, res) => {
+app.post("/order", (req, res) => {
   const {
     blind_box_name,
     customer_name,
@@ -79,7 +79,7 @@ app.get("/order", (req, res) => {
 });
 
 // Third endpoint, updating orders
-app.put("/update-order/:order_id", (req, res) => {
+app.put("order/:order_id", (req, res) => {
   // Retrieving order_id from the params(url)
   const orderId = req.params.order_id;
   //The data I want to update
@@ -128,7 +128,7 @@ app.put("/update-order/:order_id", (req, res) => {
 });
 
 // Fourth endpoint, deletiing an order
-app.delete("/delete-order/:order_id", (req, res) => {
+app.delete("/order/:order_id", (req, res) => {
   // Retrieving order_id from the params(url)
   const orderId = req.params.order_id;
   // sql query to delete the order in the customer_order table using the order_id
