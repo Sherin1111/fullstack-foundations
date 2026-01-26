@@ -1,11 +1,14 @@
 # Course-Based Learning Portfolio: Full-Stack Projects
 
-This repository contains **foundation-level, course-based assignments** completed as part of a well known coding programme, focusing on building strong fundamentals across **JavaScript, SQL, and API development**. Each project applies theoretical concepts to practical, real-life scenarios while following best practices in code structure, documentation, and version control.
+This repository contains **foundation-level, course-based assignments** completed as part of a structured coding programme, focusing on building strong fundamentals across **JavaScript, SQL, and API development**. Each project applies theoretical concepts to practical, real-life scenarios while following best practices in code structure, documentation, and version control.
 
 These assignments form the **building blocks for a larger end-to-end full-stack group project**, completed later in the programme. That final project integrates frontend, backend, and database functionality into a single production-style application.
 
 🔒 The final group project repository currently exists as a private repository:
-Final Group Project (End-to-End Full-Stack): Music Theory Learning App [(https://github.com/limeikle/cfg-music-app)]
+
+**Final Group Project (End-to-End Full-Stack)**  
+Music Theory Learning App — link will be made public once available.
+
 
 Through this foundation module, I gained hands-on experience in:
 - **Front-end development** using JavaScript, HTML, and CSS
