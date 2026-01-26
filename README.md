@@ -87,8 +87,7 @@ A database for a sneaker store selling popular footwear brands like Nike, Adidas
 
 ### Example code snippet:
 
-```
--- Create footwear table
+```-- Create footwear table
 CREATE TABLE footwear (
     sneaker_id INT PRIMARY KEY,
     name VARCHAR(200) NOT NULL,
@@ -108,16 +107,14 @@ VALUES (3001, 'Nike Air Rift', 'Nike', 'Black', 4, 120.00, 4),
 ### Queries & Data Manipulation
 
 **Cleaning and correcting data**:
-```
--- Trim spaces from customer last names
+```-- Trim spaces from customer last names
 SELECT TRIM(last_name) AS updated_last_name FROM customers;
 
 -- Delete incorrect customer
 DELETE FROM customers WHERE first_name = 'Jenn';
 ```
 **Data retrieval and sorting**:
-```
--- Footwear priced over £100, sorted by price descending
+```-- Footwear priced over £100, sorted by price descending
 SELECT name, brand, colour, price
 FROM footwear
 WHERE price >= 100
@@ -131,8 +128,7 @@ ORDER BY s.total_price DESC
 LIMIT 3;
 ```
 **Using joins and built-in functions**:
-```
--- List brands in sales_items table in uppercase
+```-- List brands in sales_items table in uppercase
 SELECT UPPER(f.brand) AS brand_name, si.sales_id, si.sneaker_id
 FROM footwear f
 RIGHT JOIN sales_items si ON f.sneaker_id = si.sneaker_id
@@ -141,8 +137,7 @@ ORDER BY brand_name ASC;
 
 ### Stored Procedures
 **Trending sneakers daily**:
-```
-DELIMITER //
+```DELIMITER //
 CREATE PROCEDURE trending_sneakers_daily()
 BEGIN
   SELECT si.sneaker_id, f.brand, f.name, f.size, COUNT(f.name) AS total_sold
@@ -157,8 +152,7 @@ DELIMITER ;
 CALL trending_sneakers_daily();
 ```
 **Update stock daily**:
-```
-DELIMITER //
+```DELIMITER //
 CREATE PROCEDURE update_stock_daily()
 BEGIN
   SELECT si.sneaker_id, f.brand, f.name, f.size, f.stock,
@@ -207,8 +201,7 @@ The API supports Blind Box figurine orders, where each order includes customer d
 - Documented the API and provided example workflows for real-life usage
 
 ### Example Code Snippet:
-```
-// POST endpoint to create a new order
+```// POST endpoint to create a new order
 app.post("/order", (req, res) => {
   const { blind_box_name, customer_name, email, total_price } = req.body;
   const sql = "INSERT INTO customer_order(blind_box_name, customer_name, email, total_price) VALUES (?, ?, ?, ?)";
