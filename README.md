@@ -9,6 +9,10 @@ These assignments form the **building blocks for a larger end-to-end full-stack 
 **Final Group Project (End-to-End Full-Stack)**  
 Music Theory Learning App — link will be made public once available.
 
+## 🎥 Demo
+Watch a 5-minute walkthrough of the full-stack group project:
+[![Project Demo Video](https://img.youtube.com/vi/FvQz1QDqcUU/0.jpg)](https://www.youtube.com/watch?v=FvQz1QDqcUU)
+
 
 Through this foundation module, I gained hands-on experience in:
 - **Front-end development** using JavaScript, HTML, and CSS
